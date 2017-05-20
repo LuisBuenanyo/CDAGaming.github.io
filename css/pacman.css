@@ -27,8 +27,7 @@ a {
 	text-decoration: none
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
 	text-decoration: underline
 }
 
@@ -62,6 +61,7 @@ a:visited {
 
 .lsb {
 	background-color: #0275d8;
+	color: #FFFFFF;
 	font-size: 15px;
 	border: none;
 	padding: .5rem 1rem;
@@ -72,8 +72,9 @@ a:visited {
 	vertical-align: top
 }
 
-.lsb:active {
+.lsb:hover, .lsb:active {
 	background-color: #025aa5;
+	color: #FFFFFF;
 	padding: .5rem 1rem;
 }
 
@@ -121,14 +122,14 @@ a:visited {
 
 #footer a {
 	display: inline-block;
-	color: #444;
+	color: #FFFFFF;
 	font-size: 10pt;
 	font-family: monospace;
 	padding: 5px
 }
 
 #footer a:hover {
-	color: #666;
+	color: #F57C00;
 	text-decoration: none;
 	background: #333
 }
