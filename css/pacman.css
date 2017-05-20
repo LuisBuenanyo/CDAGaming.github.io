@@ -61,7 +61,7 @@ a:visited {
 }
 
 .lsb {
-	background: url(/resources/nav_logo13.png) bottom;
+	background: url(https://cdagaming.github.io/resources/nav_logo13.png) bottom;
 	font: 15px arial, sans-serif;
 	border: none;
 	cursor: pointer;
@@ -76,7 +76,11 @@ a:visited {
 }
 
 #logo {
-	background: black url(/resources/pacman10-hp.gif) 0 0 no-repeat;
+	width: 544px;
+	height: 176px;
+	top: -5px;
+	left: -10px;
+	background: black url(https://cdagaming.github.io/resources/pacman10-hp.gif) 0 0 no-repeat;
 	position: relative;
 	margin-bottom: 9px
 }
