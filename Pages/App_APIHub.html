@@ -5,7 +5,6 @@
 	<title> Apps - APIHub for Pokemon GO! </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://www.w3schools.com/lib/w3data.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/tether.min.css" rel="stylesheet">
@@ -24,14 +23,12 @@
 	<!-- Font Awesome (neccessary for Custom Icons) -->
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<!-- END FONT AWESOME CODE -->
-	<!-- jQuery & Tether (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/tether.min.js"></script>
-	<script src="/js/script.js"></script>
+	<!-- Scripts and CDN's -->
+	<script src="https://cdn.rawgit.com/CDAGaming/CDAGaming.github.io/master/js/jquery.js"></script>
+	<script src="https://cdn.rawgit.com/CDAGaming/CDAGaming.github.io/master/js/umd/popper.js"></script>
+	<script src="https://cdn.rawgit.com/CDAGaming/CDAGaming.github.io/master/js/tether.js"></script>
+	<script src="https://cdn.rawgit.com/CDAGaming/CDAGaming.github.io/master/js/bootstrap.js"></script>
+	<script src="https://cdn.rawgit.com/CDAGaming/CDAGaming.github.io/master/js/script.js"></script>
 </head>
 <body onload="calcTime()" style="margin:0;">
 	<div id="loader"></div>
@@ -114,8 +111,6 @@
 		</div>
 		<nav class="navbar fixed-bottom navbar-inverse bg-faded" w3-include-html="/src/Footer.html"></nav>
 	</div>
-	<script>
-		w3IncludeHTML();
-	</script>
+	<script> w3IncludeHTML(); </script>
 </body>
 </html>
