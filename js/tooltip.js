@@ -291,12 +291,15 @@ class Tooltip {
         case 'hover':
           directEvents.push('mouseenter');
           oppositeEvents.push('mouseleave');
+          break;
         case 'focus':
           directEvents.push('focus');
           oppositeEvents.push('blur');
+          break;
         case 'click':
           directEvents.push('click');
           oppositeEvents.push('click');
+          break;
       }
     });
 
