@@ -1446,9 +1446,9 @@ function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
       } else {
         return a.concat(b);
       }
-    }, [])
+    }, []
     // Here we convert the string values into number values (in px)
-    .map(str => toValue(str, measurement, popperOffsets, referenceOffsets));
+    ).map(str => toValue(str, measurement, popperOffsets, referenceOffsets));
   });
 
   // Loop trough the offsets arrays and execute the operations
@@ -2044,9 +2044,9 @@ class Popper {
     // Refactoring modifiers' list (Object => Array)
     this.modifiers = Object.keys(this.options.modifiers).map(name => _extends({
       name
-    }, this.options.modifiers[name]))
+    }, this.options.modifiers[name])
     // sort the modifiers by order
-    .sort((a, b) => a.order - b.order);
+    ).sort((a, b) => a.order - b.order);
 
     // modifiers have the ability to execute arbitrary code when Popper.js get inited
     // such code is executed in the same order of its modifier

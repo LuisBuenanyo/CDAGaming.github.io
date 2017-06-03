@@ -1545,9 +1545,9 @@ function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
       } else {
         return a.concat(b);
       }
-    }, [])
+    }, []
     // Here we convert the string values into number values (in px)
-    .map(function (str) {
+    ).map(function (str) {
       return toValue(str, measurement, popperOffsets, referenceOffsets);
     });
   });
@@ -2159,9 +2159,9 @@ var Popper = function () {
       return _extends({
         name: name
       }, _this.options.modifiers[name]);
-    })
+    }
     // sort the modifiers by order
-    .sort(function (a, b) {
+    ).sort(function (a, b) {
       return a.order - b.order;
     });
 
