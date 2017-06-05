@@ -4288,6 +4288,8 @@ tbody.collapse.show {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4303,7 +4305,6 @@ tbody.collapse.show {
 
 .card-title {
   margin-bottom: 0.75rem;
-  word-break: break-all;
 }
 
 .card-subtitle {
