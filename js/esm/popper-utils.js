@@ -330,6 +330,8 @@ function getOffsetRectRelativeToArbitraryNode(children, parent) {
     width: childrenRect.width,
     height: childrenRect.height
   });
+  offsets.marginTop = 0;
+  offsets.marginLeft = 0;
 
   // Subtract margins of documentElement in case it's being used as parent
   // we do this only on HTML because it's the only element that behaves
@@ -891,6 +893,12 @@ function runModifiers(modifiers, data, ends) {
     }
     var fn = modifier.function || modifier.fn;
     if (modifier.enabled && isFunction(fn)) {
+      // Add properties to offsets to make them a complete clientRect object
+      // we do this before each modifier to make sure the previous one doesn't
+      // mess with these values
+      data.offsets.popper = getClientRect(data.offsets.popper);
+      data.offsets.reference = getClientRect(data.offsets.reference);
+
       data = fn(data, modifier);
     }
   });

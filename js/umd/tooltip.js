@@ -4,7 +4,7 @@
 	(global.Tooltip = factory(global.Popper));
 }(this, (function (Popper) { 'use strict';
 
-Popper = 'default' in Popper ? Popper['default'] : Popper;
+Popper = Popper && 'default' in Popper ? Popper['default'] : Popper;
 
 /**
  * Check if the given variable is a function
